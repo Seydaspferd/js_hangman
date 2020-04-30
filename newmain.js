@@ -34,7 +34,7 @@ document.getElementById('remaininglives').innerHTML =
 
 document.getElementById('submitbtn').addEventListener('click', function () {
   if (remainingletters > 0) {
-    if (remaininglives - 1 < 1) {
+    if (remaininglives == 0) {
       document.getElementById('losemessage').innerHTML = 'You lose';
     } else {
       document.getElementById('remaininglives').innerHTML =
@@ -61,7 +61,7 @@ document.getElementById('submitbtn').addEventListener('click', function () {
     }
   }
 
-  if (!guessedRightOnce && remaininglives !== 0) {
+  if (!guessedRightOnce && remaininglives !== 0 && remainingletters !== 0) {
     remaininglives--;
 
     document.getElementById('remaininglives').innerHTML =
@@ -78,5 +78,8 @@ document.getElementById('submitbtn').addEventListener('click', function () {
     }
 
     imgcounter++;
+  }
+  if (remaininglives == 0) {
+    document.getElementById('losemessage').innerHTML = 'You lose';
   }
 });
