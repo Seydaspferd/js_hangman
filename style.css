@@ -1,0 +1,13 @@
+#picture1,
+#picture2,
+#picture3,
+#picture4,
+#picture5,
+#picture6 {
+  visibility: hidden;
+}
+
+#picturediv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
