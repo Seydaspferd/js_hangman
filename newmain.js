@@ -69,7 +69,13 @@ document.getElementById('submitbtn').addEventListener('click', function () {
 
     document
       .getElementById('picturediv')
-      .children.item(imgcounter).style.visibility = 'visible';
+      .children.item(imgcounter).style.display = 'block';
+
+    if (imgcounter > 0) {
+      document
+        .getElementById('picturediv')
+        .children.item(imgcounter - 1).style.display = 'none';
+    }
 
     imgcounter++;
   }

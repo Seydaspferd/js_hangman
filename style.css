@@ -4,10 +4,31 @@
 #picture4,
 #picture5,
 #picture6 {
-  visibility: hidden;
+  display: none;
 }
 
 #picturediv {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  min-height: 400px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+#remaininglives {
+  text-align: center;
+}
+
+.inputdiv {
+  text-align: center;
+}
+
+#answer {
+  text-align: center;
+  margin: 12px 0;
+}
+
+#losemessage {
+  text-align: center;
 }
