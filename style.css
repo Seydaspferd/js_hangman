@@ -40,3 +40,13 @@ html {
 #losemessage {
   text-align: center;
 }
+
+#guessinput {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+}
+
+#submitbtn {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+}
